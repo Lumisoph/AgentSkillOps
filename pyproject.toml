@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentskillops"
+version = "0.1.0"
+description = "面向 LLM Agent 技能库的效用测量、可靠性审计与生命周期治理工具"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [{name = "Lumisoph"}]
+keywords = ["agent", "reinforcement-learning", "skill-library", "evaluation"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+analysis = ["scipy>=1.9"]
+dev = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["freshskill"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B"]

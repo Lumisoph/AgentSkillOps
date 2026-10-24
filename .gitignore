@@ -1,0 +1,79 @@
+# 默认不纳入本地实验目录；下面只开放可复核的作品集文件。
+*
+
+# 仓库元数据与文档
+!/.gitignore
+!/README.md
+!/LICENSE
+!/NOTICE.md
+!/pyproject.toml
+!/setup.py
+
+# FreshSkill 核心实现
+!freshskill/
+!freshskill/*.py
+
+# 精选的 CPU 分析与自检脚本
+!experiments/
+!experiments/analyze_factorial.py
+!experiments/analyze_p1.py
+!experiments/analyze_p2.py
+!experiments/analyze_task_conditioned.py
+!experiments/fit_trajectories.py
+!experiments/reliability_audit.py
+!experiments/select_voi_skills.py
+!experiments/selfcheck_freshness.py
+!experiments/selfcheck_lifecycle.py
+!experiments/selfcheck_stage57.py
+!experiments/simulate_lifecycle.py
+
+# 面向阅读者整理的文档
+!docs/
+!docs/架构设计.md
+!docs/实验报告.md
+!docs/复现指南.md
+
+# 标准库单元测试
+!tests/
+!tests/test_freshskill_core.py
+
+# 最小可复核数据：配对评测表、时间线和汇总结果
+!results/
+!results/stage55_measure/
+!results/stage55_measure/*.csv
+!results/stage55_measure/*.json
+!results/stage57_noskill/
+!results/stage57_noskill/base_ckpt40_noskill.csv
+!results/stage57_reliability/
+!results/stage57_reliability/*.json
+!results/stage57_e2/
+!results/stage57_e2/e2_fit.json
+!results/stage57_factorial/
+!results/stage57_factorial/base_ckpt40_general_only.csv
+!results/stage57_factorial/base_ckpt40_task_specific_only.csv
+!results/stage57_factorial/factorial_ckpt40.json
+!results/stage57_factorial/task_conditioned_ckpt40.json
+!results/stage57_p1/
+!results/stage57_p1/base_full.csv
+!results/stage57_p1/base_ts_only.csv
+!results/stage57_p1/p1_valid_train.json
+!results/stage57_p2/
+!results/stage57_p2/base_full.csv
+!results/stage57_p2/base_general_only.csv
+!results/stage57_p2/base_selective.csv
+!results/stage57_p2/base_selective_cle.csv
+!results/stage57_p2/base_ts_only.csv
+!results/stage57_p2/p2_valid_unseen.json
+
+# 即使未来调整白名单，也不提交以下本地产物。
+**/__pycache__/
+**/*.py[cod]
+**/*.egg-info/
+**/.ipynb_checkpoints/
+**/*.log
+**/*.traj.jsonl
+**/models/
+**/outputs/
+**/checkpoints/
+**/third_party/
+.git.legacy-backup/

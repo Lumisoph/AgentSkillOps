@@ -1,0 +1,80 @@
+{
+  "gen_001": {
+    "utility": {
+      "SFT55": 0.007142857142857143
+    },
+    "counts": {
+      "SFT55": {
+        "help": 5,
+        "harm": 4,
+        "neutral": 131,
+        "usage": 140
+      }
+    }
+  },
+  "gen_002": {
+    "utility": {
+      "SFT55": -0.007142857142857143
+    },
+    "counts": {
+      "SFT55": {
+        "help": 5,
+        "harm": 6,
+        "neutral": 129,
+        "usage": 140
+      }
+    }
+  },
+  "gen_003": {
+    "utility": {
+      "SFT55": 0.007142857142857143
+    },
+    "counts": {
+      "SFT55": {
+        "help": 5,
+        "harm": 4,
+        "neutral": 131,
+        "usage": 140
+      }
+    }
+  },
+  "gen_004": {
+    "utility": {
+      "SFT55": -0.007142857142857143
+    },
+    "counts": {
+      "SFT55": {
+        "help": 4,
+        "harm": 5,
+        "neutral": 131,
+        "usage": 140
+      }
+    }
+  },
+  "gen_005": {
+    "utility": {
+      "SFT55": 0.02857142857142857
+    },
+    "counts": {
+      "SFT55": {
+        "help": 7,
+        "harm": 3,
+        "neutral": 130,
+        "usage": 140
+      }
+    }
+  },
+  "gen_006": {
+    "utility": {
+      "SFT55": 0.0
+    },
+    "counts": {
+      "SFT55": {
+        "help": 5,
+        "harm": 5,
+        "neutral": 130,
+        "usage": 140
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "gen_001": {
+    "0": {
+      "utility": 0.007142857142857143,
+      "counts": {
+        "help": 5,
+        "harm": 4,
+        "neutral": 131,
+        "usage": 140
+      }
+    },
+    "20": {
+      "utility": 0.03571428571428571,
+      "counts": {
+        "help": 10,
+        "harm": 5,
+        "neutral": 125,
+        "usage": 140
+      }
+    },
+    "40": {
+      "utility": 0.02142857142857143,
+      "counts": {
+        "help": 13,
+        "harm": 10,
+        "neutral": 117,
+        "usage": 140
+      }
+    }
+  },
+  "gen_002": {
+    "0": {
+      "utility": -0.007142857142857143,
+      "counts": {
+        "help": 5,
+        "harm": 6,
+        "neutral": 129,
+        "usage": 140
+      }
+    },
+    "20": {
+      "utility": -0.02857142857142857,
+      "counts": {
+        "help": 12,
+        "harm": 16,
+        "neutral": 112,
+        "usage": 140
+      }
+    },
+    "40": {
+      "utility": -0.02857142857142857,
+      "counts": {
+        "help": 6,
+        "harm": 10,
+        "neutral": 124,
+        "usage": 140
+      }
+    }
+  },
+  "gen_003": {
+    "0": {
+      "utility": 0.007142857142857143,
+      "counts": {
+        "help": 5,
+        "harm": 4,
+        "neutral": 131,
+        "usage": 140
+      }
+    },
+    "20": {
+      "utility": -0.03571428571428571,
+      "counts": {
+        "help": 8,
+        "harm": 13,
+        "neutral": 119,
+        "usage": 140
+      }
+    },
+    "40": {
+      "utility": -0.02142857142857143,
+      "counts": {
+        "help": 7,
+        "harm": 10,
+        "neutral": 123,
+        "usage": 140
+      }
+    }
+  },
+  "gen_004": {
+    "0": {
+      "utility": -0.007142857142857143,
+      "counts": {
+        "help": 4,
+        "harm": 5,
+        "neutral": 131,
+        "usage": 140
+      }
+    },
+    "20": {
+      "utility": -0.02142857142857143,
+      "counts": {
+        "help": 7,
+        "harm": 10,
+        "neutral": 123,
+        "usage": 140
+      }
+    },
+    "40": {
+      "utility": 0.0,
+      "counts": {
+        "help": 6,
+        "harm": 6,
+        "neutral": 128,
+        "usage": 140
+      }
+    }
+  },
+  "gen_005": {
+    "0": {
+      "utility": 0.02857142857142857,
+      "counts": {
+        "help": 7,
+        "harm": 3,
+        "neutral": 130,
+        "usage": 140
+      }
+    },
+    "20": {
+      "utility": -0.06428571428571428,
+      "counts": {
+        "help": 6,
+        "harm": 15,
+        "neutral": 119,
+        "usage": 140
+      }
+    },
+    "40": {
+      "utility": -0.014285714285714285,
+      "counts": {
+        "help": 6,
+        "harm": 8,
+        "neutral": 126,
+        "usage": 140
+      }
+    }
+  },
+  "gen_006": {
+    "0": {
+      "utility": 0.0,
+      "counts": {
+        "help": 5,
+        "harm": 5,
+        "neutral": 130,
+        "usage": 140
+      }
+    },
+    "20": {
+      "utility": -0.05,
+      "counts": {
+        "help": 5,
+        "harm": 12,
+        "neutral": 123,
+        "usage": 140
+      }
+    },
+    "40": {
+      "utility": -0.02857142857142857,
+      "counts": {
+        "help": 6,
+        "harm": 10,
+        "neutral": 124,
+        "usage": 140
+      }
+    }
+  }
+}

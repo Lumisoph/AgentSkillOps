@@ -1,0 +1,2 @@
+policy,task_id,task_type,seed,condition,excluded_skill,skill_ids,reward,won,steps,prompt_tokens,response_tokens
+SFT55,look_at_obj_in_light-CD-None-DeskLamp-320,look_at_obj_in_light,0,no_skill,,,0.0,0,50,68439,1308

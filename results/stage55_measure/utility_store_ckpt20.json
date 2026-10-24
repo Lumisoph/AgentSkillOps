@@ -1,0 +1,80 @@
+{
+  "gen_001": {
+    "utility": {
+      "RL_ckpt20": 0.03571428571428571
+    },
+    "counts": {
+      "RL_ckpt20": {
+        "help": 10,
+        "harm": 5,
+        "neutral": 125,
+        "usage": 140
+      }
+    }
+  },
+  "gen_002": {
+    "utility": {
+      "RL_ckpt20": -0.02857142857142857
+    },
+    "counts": {
+      "RL_ckpt20": {
+        "help": 12,
+        "harm": 16,
+        "neutral": 112,
+        "usage": 140
+      }
+    }
+  },
+  "gen_003": {
+    "utility": {
+      "RL_ckpt20": -0.03571428571428571
+    },
+    "counts": {
+      "RL_ckpt20": {
+        "help": 8,
+        "harm": 13,
+        "neutral": 119,
+        "usage": 140
+      }
+    }
+  },
+  "gen_004": {
+    "utility": {
+      "RL_ckpt20": -0.02142857142857143
+    },
+    "counts": {
+      "RL_ckpt20": {
+        "help": 7,
+        "harm": 10,
+        "neutral": 123,
+        "usage": 140
+      }
+    }
+  },
+  "gen_005": {
+    "utility": {
+      "RL_ckpt20": -0.06428571428571428
+    },
+    "counts": {
+      "RL_ckpt20": {
+        "help": 6,
+        "harm": 15,
+        "neutral": 119,
+        "usage": 140
+      }
+    }
+  },
+  "gen_006": {
+    "utility": {
+      "RL_ckpt20": -0.05
+    },
+    "counts": {
+      "RL_ckpt20": {
+        "help": 5,
+        "harm": 12,
+        "neutral": 123,
+        "usage": 140
+      }
+    }
+  }
+}

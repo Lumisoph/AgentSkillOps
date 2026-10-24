@@ -1,0 +1,261 @@
+{
+ "n": 140,
+ "cells": {
+  "none": {
+   "sr": 0.1357142857142857,
+   "wins": 19
+  },
+  "general_only": {
+   "sr": 0.17857142857142858,
+   "wins": 25
+  },
+  "task_specific_only": {
+   "sr": 0.2714285714285714,
+   "wins": 38
+  },
+  "full": {
+   "sr": 0.2714285714285714,
+   "wins": 38
+  }
+ },
+ "effects": {
+  "G": 0.021428571428571436,
+  "TS": 0.11428571428571427,
+  "interaction": -0.04285714285714287
+ },
+ "bootstrap": {
+  "G": {
+   "ci95": [
+    -0.021428571428571422,
+    0.06428571428571432
+   ],
+   "mean": 0.021537857142857147
+  },
+  "TS": {
+   "ci95": [
+    0.057142857142857155,
+    0.1714285714285714
+   ],
+   "mean": 0.11413214285714285
+  },
+  "interaction": {
+   "ci95": [
+    -0.11428571428571435,
+    0.0357142857142857
+   ],
+   "mean": -0.043372857142857144
+  }
+ },
+ "pairwise": {
+  "full_vs_none": {
+   "delta": 0.1357142857142857,
+   "b": 20,
+   "c": 1,
+   "p": 2.09808349609375e-05
+  },
+  "full_vs_task_specific_only": {
+   "delta": 0.0,
+   "b": 9,
+   "c": 9,
+   "p": 1.0
+  },
+  "full_vs_general_only": {
+   "delta": 0.09285714285714286,
+   "b": 20,
+   "c": 7,
+   "p": 0.0191572904586792
+  },
+  "general_only_vs_none": {
+   "delta": 0.04285714285714286,
+   "b": 11,
+   "c": 5,
+   "p": 0.210113525390625
+  },
+  "task_specific_only_vs_none": {
+   "delta": 0.1357142857142857,
+   "b": 21,
+   "c": 2,
+   "p": 6.604194641113281e-05
+  },
+  "general_only_vs_task_specific_only": {
+   "delta": -0.09285714285714286,
+   "b": 10,
+   "c": 23,
+   "p": 0.03508203336969018
+  }
+ },
+ "integrity": {
+  "general_only": {
+   "episodes_with_general": 140,
+   "episodes_with_task_specific": 0
+  },
+  "task_specific_only": {
+   "episodes_with_general": 0,
+   "episodes_with_task_specific": 140
+  }
+ },
+ "by_task_type": [
+  {
+   "task_type": "look_at_obj_in_light",
+   "n": 13,
+   "cells": {
+    "none": {
+     "sr": 0.0,
+     "wins": 0
+    },
+    "general_only": {
+     "sr": 0.23076923076923078,
+     "wins": 3
+    },
+    "task_specific_only": {
+     "sr": 0.07692307692307693,
+     "wins": 1
+    },
+    "full": {
+     "sr": 0.0,
+     "wins": 0
+    }
+   },
+   "effects": {
+    "G": 0.07692307692307693,
+    "TS": -0.07692307692307693,
+    "interaction": -0.3076923076923077
+   }
+  },
+  {
+   "task_type": "pick_cool_then_place_in_recep",
+   "n": 25,
+   "cells": {
+    "none": {
+     "sr": 0.08,
+     "wins": 2
+    },
+    "general_only": {
+     "sr": 0.04,
+     "wins": 1
+    },
+    "task_specific_only": {
+     "sr": 0.12,
+     "wins": 3
+    },
+    "full": {
+     "sr": 0.28,
+     "wins": 7
+    }
+   },
+   "effects": {
+    "G": 0.06000000000000001,
+    "TS": 0.14,
+    "interaction": 0.2
+   }
+  },
+  {
+   "task_type": "pick_and_place_simple",
+   "n": 35,
+   "cells": {
+    "none": {
+     "sr": 0.42857142857142855,
+     "wins": 15
+    },
+    "general_only": {
+     "sr": 0.5428571428571428,
+     "wins": 19
+    },
+    "task_specific_only": {
+     "sr": 0.45714285714285713,
+     "wins": 16
+    },
+    "full": {
+     "sr": 0.4857142857142857,
+     "wins": 17
+    }
+   },
+   "effects": {
+    "G": 0.07142857142857142,
+    "TS": -0.014285714285714263,
+    "interaction": -0.08571428571428569
+   }
+  },
+  {
+   "task_type": "pick_clean_then_place_in_recep",
+   "n": 27,
+   "cells": {
+    "none": {
+     "sr": 0.07407407407407407,
+     "wins": 2
+    },
+    "general_only": {
+     "sr": 0.037037037037037035,
+     "wins": 1
+    },
+    "task_specific_only": {
+     "sr": 0.5555555555555556,
+     "wins": 15
+    },
+    "full": {
+     "sr": 0.4444444444444444,
+     "wins": 12
+    }
+   },
+   "effects": {
+    "G": -0.0740740740740741,
+    "TS": 0.4444444444444444,
+    "interaction": -0.07407407407407413
+   }
+  },
+  {
+   "task_type": "pick_two_obj_and_place",
+   "n": 24,
+   "cells": {
+    "none": {
+     "sr": 0.0,
+     "wins": 0
+    },
+    "general_only": {
+     "sr": 0.041666666666666664,
+     "wins": 1
+    },
+    "task_specific_only": {
+     "sr": 0.041666666666666664,
+     "wins": 1
+    },
+    "full": {
+     "sr": 0.08333333333333333,
+     "wins": 2
+    }
+   },
+   "effects": {
+    "G": 0.041666666666666664,
+    "TS": 0.041666666666666664,
+    "interaction": 0.0
+   }
+  },
+  {
+   "task_type": "pick_heat_then_place_in_recep",
+   "n": 16,
+   "cells": {
+    "none": {
+     "sr": 0.0,
+     "wins": 0
+    },
+    "general_only": {
+     "sr": 0.0,
+     "wins": 0
+    },
+    "task_specific_only": {
+     "sr": 0.125,
+     "wins": 2
+    },
+    "full": {
+     "sr": 0.0,
+     "wins": 0
+    }
+   },
+   "effects": {
+    "G": -0.0625,
+    "TS": 0.0625,
+    "interaction": -0.125
+   }
+  }
+ ]
+}

@@ -1,0 +1,2030 @@
+{
+ "n": 140,
+ "audit": {
+  "routing_rule": "template memory: _detect_task_type(description) -> one task-specific group; gen_001..006 always added",
+  "task_type_x_routed_group": [
+   {
+    "task_type": "look_at_obj_in_light",
+    "routed_group": "exa",
+    "n": 6
+   },
+   {
+    "task_type": "look_at_obj_in_light",
+    "routed_group": "loo",
+    "n": 7
+   },
+   {
+    "task_type": "pick_and_place_simple",
+    "routed_group": "pic",
+    "n": 35
+   },
+   {
+    "task_type": "pick_clean_then_place_in_recep",
+    "routed_group": "cle",
+    "n": 27
+   },
+   {
+    "task_type": "pick_cool_then_place_in_recep",
+    "routed_group": "coo",
+    "n": 25
+   },
+   {
+    "task_type": "pick_heat_then_place_in_recep",
+    "routed_group": "hea",
+    "n": 6
+   },
+   {
+    "task_type": "pick_heat_then_place_in_recep",
+    "routed_group": "pic",
+    "n": 10
+   },
+   {
+    "task_type": "pick_two_obj_and_place",
+    "routed_group": "exa",
+    "n": 8
+   },
+   {
+    "task_type": "pick_two_obj_and_place",
+    "routed_group": "pic",
+    "n": 16
+   }
+  ],
+  "routing_agrees_with_task_type": {
+   "look_at_obj_in_light": [
+    [
+     "look_at_obj_in_light",
+     "exa"
+    ],
+    [
+     "look_at_obj_in_light",
+     "loo"
+    ]
+   ],
+   "pick_and_place_simple": [
+    [
+     "pick_and_place_simple",
+     "pic"
+    ]
+   ],
+   "pick_clean_then_place_in_recep": [
+    [
+     "pick_clean_then_place_in_recep",
+     "cle"
+    ]
+   ],
+   "pick_cool_then_place_in_recep": [
+    [
+     "pick_cool_then_place_in_recep",
+     "coo"
+    ]
+   ],
+   "pick_heat_then_place_in_recep": [
+    [
+     "pick_heat_then_place_in_recep",
+     "hea"
+    ],
+    [
+     "pick_heat_then_place_in_recep",
+     "pic"
+    ]
+   ],
+   "pick_two_obj_and_place": [
+    [
+     "pick_two_obj_and_place",
+     "exa"
+    ],
+    [
+     "pick_two_obj_and_place",
+     "pic"
+    ]
+   ]
+  },
+  "cost_by_cell": {
+   "none": {
+    "episodes": 140,
+    "prompt_tokens_mean": 69047.28571428571,
+    "prompt_tokens_per_step": 1454.490411049268,
+    "prompt_tokens_mean_won": 7255.368421052632,
+    "response_tokens_mean": 1282.642857142857,
+    "steps_mean": 44.4,
+    "won": 19
+   },
+   "general_only": {
+    "episodes": 140,
+    "prompt_tokens_mean": 88888.33571428571,
+    "prompt_tokens_per_step": 1927.3867167911421,
+    "prompt_tokens_mean_won": 16858.64,
+    "response_tokens_mean": 1263.7142857142858,
+    "steps_mean": 43.214285714285715,
+    "won": 25
+   },
+   "task_specific_only": {
+    "episodes": 140,
+    "prompt_tokens_mean": 82457.20714285714,
+    "prompt_tokens_per_step": 1918.6962455400412,
+    "prompt_tokens_mean_won": 20430.894736842107,
+    "response_tokens_mean": 1234.2285714285715,
+    "steps_mean": 39.892857142857146,
+    "won": 38
+   },
+   "full": {
+    "episodes": 140,
+    "prompt_tokens_mean": 90906.81428571428,
+    "prompt_tokens_per_step": 2128.6444815056498,
+    "prompt_tokens_mean_won": 20030.736842105263,
+    "response_tokens_mean": 1231.9,
+    "steps_mean": 39.59285714285714,
+    "won": 38
+   }
+  }
+ },
+ "by_task_type": [
+  {
+   "n": 13,
+   "cells": {
+    "none": {
+     "sr": 0.0,
+     "wins": 0
+    },
+    "general_only": {
+     "sr": 0.23076923076923078,
+     "wins": 3
+    },
+    "task_specific_only": {
+     "sr": 0.07692307692307693,
+     "wins": 1
+    },
+    "full": {
+     "sr": 0.0,
+     "wins": 0
+    }
+   },
+   "effects": {
+    "G": 0.07692307692307693,
+    "TS": -0.07692307692307693,
+    "interaction": -0.3076923076923077
+   },
+   "bootstrap": {
+    "G": {
+     "ci95": [
+      -0.07692307692307693,
+      0.23076923076923078
+     ],
+     "mean": 0.07963076923076924
+    },
+    "TS": {
+     "ci95": [
+      -0.23076923076923078,
+      0.07692307692307693
+     ],
+     "mean": -0.07963076923076924
+    },
+    "interaction": {
+     "ci95": [
+      -0.5384615384615385,
+      -0.07692307692307693
+     ],
+     "mean": -0.30793846153846155
+    }
+   },
+   "pairwise": {
+    "full_vs_general_only": {
+     "delta": -0.23076923076923078,
+     "b": 0,
+     "c": 3,
+     "p": 0.25,
+     "ci_exact": [
+      -0.23076923076923078,
+      0.0958145659286369
+     ],
+     "ci_wald": [
+      -0.45980413378661383,
+      -0.0017343277518477307
+     ]
+    },
+    "full_vs_task_specific_only": {
+     "delta": -0.07692307692307693,
+     "b": 0,
+     "c": 1,
+     "p": 1.0,
+     "ci_exact": [
+      -0.07692307692307693,
+      0.07307692307692307
+     ],
+     "ci_wald": [
+      -0.22177746836521728,
+      0.06793131451906342
+     ]
+    },
+    "task_specific_only_vs_none": {
+     "delta": 0.07692307692307693,
+     "b": 1,
+     "c": 0,
+     "p": 1.0,
+     "ci_exact": [
+      -0.07307692307692307,
+      0.07692307692307693
+     ],
+     "ci_wald": [
+      -0.06793131451906342,
+      0.22177746836521728
+     ]
+    }
+   },
+   "cost": {
+    "none": {
+     "episodes": 13,
+     "prompt_tokens_mean": 69758.84615384616,
+     "prompt_tokens_per_step": 1395.176923076923,
+     "prompt_tokens_mean_won": 0.0,
+     "response_tokens_mean": 1476.7692307692307,
+     "steps_mean": 50.0,
+     "won": 0
+    },
+    "general_only": {
+     "episodes": 13,
+     "prompt_tokens_mean": 76041.69230769231,
+     "prompt_tokens_per_step": 1721.9616194331984,
+     "prompt_tokens_mean_won": 16924.333333333332,
+     "response_tokens_mean": 1276.7692307692307,
+     "steps_mean": 41.61538461538461,
+     "won": 3
+    },
+    "task_specific_only": {
+     "episodes": 13,
+     "prompt_tokens_mean": 98983.0,
+     "prompt_tokens_per_step": 1988.4695908346973,
+     "prompt_tokens_mean_won": 89711.0,
+     "response_tokens_mean": 1615.4615384615386,
+     "steps_mean": 49.76923076923077,
+     "won": 1
+    },
+    "full": {
+     "episodes": 13,
+     "prompt_tokens_mean": 109871.0,
+     "prompt_tokens_per_step": 2197.42,
+     "prompt_tokens_mean_won": 0.0,
+     "response_tokens_mean": 1564.5384615384614,
+     "steps_mean": 50.0,
+     "won": 0
+    }
+   },
+   "discordant": {
+    "full_only_vs_general_only": [],
+    "general_only_only_vs_full": [
+     "look_at_obj_in_light-Pillow-None-DeskLamp-323",
+     "look_at_obj_in_light-CD-None-DeskLamp-314",
+     "look_at_obj_in_light-Bowl-None-DeskLamp-316"
+    ],
+    "full_only_vs_task_specific_only": [],
+    "task_specific_only_only_vs_full": [
+     "look_at_obj_in_light-KeyChain-None-DeskLamp-327"
+    ]
+   },
+   "stratum": "look_at_obj_in_light",
+   "multiplicity": {
+    "family_size": 12,
+    "full_vs_general_only": {
+     "bh": 0.75,
+     "bonferroni": 1.0
+    },
+    "full_vs_task_specific_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    }
+   }
+  },
+  {
+   "n": 25,
+   "cells": {
+    "none": {
+     "sr": 0.08,
+     "wins": 2
+    },
+    "general_only": {
+     "sr": 0.04,
+     "wins": 1
+    },
+    "task_specific_only": {
+     "sr": 0.12,
+     "wins": 3
+    },
+    "full": {
+     "sr": 0.28,
+     "wins": 7
+    }
+   },
+   "effects": {
+    "G": 0.06000000000000001,
+    "TS": 0.14,
+    "interaction": 0.2
+   },
+   "bootstrap": {
+    "G": {
+     "ci95": [
+      -0.06,
+      0.2
+     ],
+     "mean": 0.060068
+    },
+    "TS": {
+     "ci95": [
+      0.03999999999999998,
+      0.26
+     ],
+     "mean": 0.14038
+    },
+    "interaction": {
+     "ci95": [
+      0.0,
+      0.4
+     ],
+     "mean": 0.200072
+    }
+   },
+   "pairwise": {
+    "full_vs_general_only": {
+     "delta": 0.24,
+     "b": 6,
+     "c": 0,
+     "p": 0.03125,
+     "ci_exact": [
+      0.019556099308847764,
+      0.24
+     ],
+     "ci_wald": [
+      0.07258341300814902,
+      0.40741658699185096
+     ]
+    },
+    "full_vs_task_specific_only": {
+     "delta": 0.16,
+     "b": 5,
+     "c": 1,
+     "p": 0.21875,
+     "ci_exact": [
+      -0.06779259791888392,
+      0.23797884263304506
+     ],
+     "ci_wald": [
+      -0.02150912263575075,
+      0.34150912263575073
+     ]
+    },
+    "task_specific_only_vs_none": {
+     "delta": 0.04,
+     "b": 2,
+     "c": 1,
+     "p": 1.0,
+     "ci_exact": [
+      -0.09736816222794094,
+      0.11798309792169297
+     ],
+     "ci_wald": [
+      -0.09488446018722838,
+      0.1748844601872284
+     ]
+    }
+   },
+   "cost": {
+    "none": {
+     "episodes": 25,
+     "prompt_tokens_mean": 81089.52,
+     "prompt_tokens_per_step": 1669.3953777777779,
+     "prompt_tokens_mean_won": 31008.0,
+     "response_tokens_mean": 1333.08,
+     "steps_mean": 47.92,
+     "won": 2
+    },
+    "general_only": {
+     "episodes": 25,
+     "prompt_tokens_mean": 107815.88,
+     "prompt_tokens_per_step": 2200.972,
+     "prompt_tokens_mean_won": 21707.0,
+     "response_tokens_mean": 1372.48,
+     "steps_mean": 48.56,
+     "won": 1
+    },
+    "task_specific_only": {
+     "episodes": 25,
+     "prompt_tokens_mean": 101055.52,
+     "prompt_tokens_per_step": 2126.5240863266813,
+     "prompt_tokens_mean_won": 39367.0,
+     "response_tokens_mean": 1334.88,
+     "steps_mean": 46.56,
+     "won": 3
+    },
+    "full": {
+     "episodes": 25,
+     "prompt_tokens_mean": 99819.44,
+     "prompt_tokens_per_step": 2274.953902331002,
+     "prompt_tokens_mean_won": 43671.142857142855,
+     "response_tokens_mean": 1191.52,
+     "steps_mean": 42.16,
+     "won": 7
+    }
+   },
+   "discordant": {
+    "full_only_vs_general_only": [
+     "pick_cool_then_place_in_recep-Bowl-None-Cabinet-20",
+     "pick_cool_then_place_in_recep-Tomato-None-CounterTop-12",
+     "pick_cool_then_place_in_recep-Tomato-None-Microwave-18",
+     "pick_cool_then_place_in_recep-Cup-None-SideTable-21",
+     "pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1",
+     "pick_cool_then_place_in_recep-Apple-None-GarbageCan-2"
+    ],
+    "general_only_only_vs_full": [],
+    "full_only_vs_task_specific_only": [
+     "pick_cool_then_place_in_recep-Plate-None-CounterTop-1",
+     "pick_cool_then_place_in_recep-Bowl-None-Cabinet-20",
+     "pick_cool_then_place_in_recep-Tomato-None-Microwave-18",
+     "pick_cool_then_place_in_recep-Cup-None-SideTable-21",
+     "pick_cool_then_place_in_recep-Apple-None-GarbageCan-2"
+    ],
+    "task_specific_only_only_vs_full": [
+     "pick_cool_then_place_in_recep-Plate-None-Cabinet-27"
+    ]
+   },
+   "stratum": "pick_cool_then_place_in_recep",
+   "multiplicity": {
+    "family_size": 12,
+    "full_vs_general_only": {
+     "bh": 0.1875,
+     "bonferroni": 0.375
+    },
+    "full_vs_task_specific_only": {
+     "bh": 0.75,
+     "bonferroni": 1.0
+    }
+   }
+  },
+  {
+   "n": 35,
+   "cells": {
+    "none": {
+     "sr": 0.42857142857142855,
+     "wins": 15
+    },
+    "general_only": {
+     "sr": 0.5428571428571428,
+     "wins": 19
+    },
+    "task_specific_only": {
+     "sr": 0.45714285714285713,
+     "wins": 16
+    },
+    "full": {
+     "sr": 0.4857142857142857,
+     "wins": 17
+    }
+   },
+   "effects": {
+    "G": 0.07142857142857142,
+    "TS": -0.014285714285714263,
+    "interaction": -0.08571428571428569
+   },
+   "bootstrap": {
+    "G": {
+     "ci95": [
+      -0.01428571428571429,
+      0.1714285714285714
+     ],
+     "mean": 0.07188857142857143
+    },
+    "TS": {
+     "ci95": [
+      -0.08571428571428572,
+      0.05714285714285716
+     ],
+     "mean": -0.014608571428571429
+    },
+    "interaction": {
+     "ci95": [
+      -0.2285714285714286,
+      0.05714285714285716
+     ],
+     "mean": -0.08649714285714286
+    }
+   },
+   "pairwise": {
+    "full_vs_general_only": {
+     "delta": -0.05714285714285714,
+     "b": 1,
+     "c": 3,
+     "p": 0.625,
+     "ci_exact": [
+      -0.11284355126635202,
+      0.0699153257866872
+     ],
+     "ci_wald": [
+      -0.1675312623310833,
+      0.05324554804536904
+     ]
+    },
+    "full_vs_task_specific_only": {
+     "delta": 0.02857142857142857,
+     "b": 2,
+     "c": 1,
+     "p": 1.0,
+     "ci_exact": [
+      -0.0695486873056721,
+      0.08427364137263783
+     ],
+     "ci_wald": [
+      -0.06796043145416092,
+      0.12510328859701805
+     ]
+    },
+    "task_specific_only_vs_none": {
+     "delta": 0.02857142857142857,
+     "b": 2,
+     "c": 1,
+     "p": 1.0,
+     "ci_exact": [
+      -0.0695486873056721,
+      0.08427364137263783
+     ],
+     "ci_wald": [
+      -0.06796043145416092,
+      0.12510328859701805
+     ]
+    }
+   },
+   "cost": {
+    "none": {
+     "episodes": 35,
+     "prompt_tokens_mean": 42570.91428571429,
+     "prompt_tokens_per_step": 1073.3924263038548,
+     "prompt_tokens_mean_won": 3858.4666666666667,
+     "response_tokens_mean": 957.0285714285715,
+     "steps_mean": 31.34285714285714,
+     "won": 15
+    },
+    "general_only": {
+     "episodes": 35,
+     "prompt_tokens_mean": 51792.31428571429,
+     "prompt_tokens_per_step": 1485.545968041762,
+     "prompt_tokens_mean_won": 15238.157894736842,
+     "response_tokens_mean": 871.2,
+     "steps_mean": 28.771428571428572,
+     "won": 19
+    },
+    "task_specific_only": {
+     "episodes": 35,
+     "prompt_tokens_mean": 58072.97142857143,
+     "prompt_tokens_per_step": 1573.2783745786603,
+     "prompt_tokens_mean_won": 10267.625,
+     "response_tokens_mean": 982.0285714285715,
+     "steps_mean": 30.885714285714286,
+     "won": 16
+    },
+    "full": {
+     "episodes": 35,
+     "prompt_tokens_mean": 61747.4,
+     "prompt_tokens_per_step": 1754.309692803437,
+     "prompt_tokens_mean_won": 10203.64705882353,
+     "response_tokens_mean": 956.9428571428572,
+     "steps_mean": 29.457142857142856,
+     "won": 17
+    }
+   },
+   "discordant": {
+    "full_only_vs_general_only": [
+     "pick_and_place_simple-Mug-None-Dresser-311"
+    ],
+    "general_only_only_vs_full": [
+     "pick_and_place_simple-Pencil-None-Dresser-330",
+     "pick_and_place_simple-SoapBar-None-Cart-401",
+     "pick_and_place_simple-CreditCard-None-Drawer-227"
+    ],
+    "full_only_vs_task_specific_only": [
+     "pick_and_place_simple-RemoteControl-None-Sofa-207",
+     "pick_and_place_simple-Candle-None-Toilet-429"
+    ],
+    "task_specific_only_only_vs_full": [
+     "pick_and_place_simple-Pencil-None-Desk-310"
+    ]
+   },
+   "stratum": "pick_and_place_simple",
+   "multiplicity": {
+    "family_size": 12,
+    "full_vs_general_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    },
+    "full_vs_task_specific_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    }
+   }
+  },
+  {
+   "n": 27,
+   "cells": {
+    "none": {
+     "sr": 0.07407407407407407,
+     "wins": 2
+    },
+    "general_only": {
+     "sr": 0.037037037037037035,
+     "wins": 1
+    },
+    "task_specific_only": {
+     "sr": 0.5555555555555556,
+     "wins": 15
+    },
+    "full": {
+     "sr": 0.4444444444444444,
+     "wins": 12
+    }
+   },
+   "effects": {
+    "G": -0.0740740740740741,
+    "TS": 0.4444444444444444,
+    "interaction": -0.07407407407407413
+   },
+   "bootstrap": {
+    "G": {
+     "ci95": [
+      -0.18518518518518517,
+      0.018518518518518517
+     ],
+     "mean": -0.07424444444444445
+    },
+    "TS": {
+     "ci95": [
+      0.2777777777777778,
+      0.6111111111111112
+     ],
+     "mean": 0.44607407407407407
+    },
+    "interaction": {
+     "ci95": [
+      -0.2592592592592593,
+      0.11111111111111116
+     ],
+     "mean": -0.07657777777777779
+    }
+   },
+   "pairwise": {
+    "full_vs_general_only": {
+     "delta": 0.4074074074074074,
+     "b": 12,
+     "c": 1,
+     "p": 0.00341796875,
+     "ci_exact": [
+      0.1345283956679698,
+      0.47960791329885133
+     ],
+     "ci_wald": [
+      0.19553502838135925,
+      0.6192797864334555
+     ]
+    },
+    "full_vs_task_specific_only": {
+     "delta": -0.1111111111111111,
+     "b": 1,
+     "c": 4,
+     "p": 0.375,
+     "ci_exact": [
+      -0.1833145320816785,
+      0.08015479115484796
+     ],
+     "ci_wald": [
+      -0.2679290341836964,
+      0.045706811961474164
+     ]
+    },
+    "task_specific_only_vs_none": {
+     "delta": 0.48148148148148145,
+     "b": 13,
+     "c": 0,
+     "p": 0.000244140625,
+     "ci_exact": [
+      0.24357894118473167,
+      0.48148148148148145
+     ],
+     "ci_wald": [
+      0.29300979396482363,
+      0.6699531689981393
+     ]
+    }
+   },
+   "cost": {
+    "none": {
+     "episodes": 27,
+     "prompt_tokens_mean": 79760.66666666667,
+     "prompt_tokens_per_step": 1644.7332659932658,
+     "prompt_tokens_mean_won": 8979.5,
+     "response_tokens_mean": 1368.2222222222222,
+     "steps_mean": 47.074074074074076,
+     "won": 2
+    },
+    "general_only": {
+     "episodes": 27,
+     "prompt_tokens_mean": 108062.29629629629,
+     "prompt_tokens_per_step": 2183.537175925926,
+     "prompt_tokens_mean_won": 53499.0,
+     "response_tokens_mean": 1476.2592592592594,
+     "steps_mean": 49.333333333333336,
+     "won": 1
+    },
+    "task_specific_only": {
+     "episodes": 27,
+     "prompt_tokens_mean": 63559.37037037037,
+     "prompt_tokens_per_step": 1931.4690890590891,
+     "prompt_tokens_mean_won": 22417.466666666667,
+     "response_tokens_mean": 1036.3703703703704,
+     "steps_mean": 29.48148148148148,
+     "won": 15
+    },
+    "full": {
+     "episodes": 27,
+     "prompt_tokens_mean": 80068.44444444444,
+     "prompt_tokens_per_step": 2201.199816623706,
+     "prompt_tokens_mean_won": 21130.333333333332,
+     "response_tokens_mean": 1179.2592592592594,
+     "steps_mean": 32.851851851851855,
+     "won": 12
+    }
+   },
+   "discordant": {
+    "full_only_vs_general_only": [
+     "pick_clean_then_place_in_recep-Ladle-None-CounterTop-14",
+     "pick_clean_then_place_in_recep-ButterKnife-None-Drawer-30",
+     "pick_clean_then_place_in_recep-Fork-None-Drawer-8",
+     "pick_clean_then_place_in_recep-Ladle-None-DiningTable-4",
+     "pick_clean_then_place_in_recep-Mug-None-CoffeeMachine-26",
+     "pick_clean_then_place_in_recep-Fork-None-CounterTop-23",
+     "pick_clean_then_place_in_recep-ButterKnife-None-DiningTable-16",
+     "pick_clean_then_place_in_recep-SoapBar-None-Toilet-428",
+     "pick_clean_then_place_in_recep-SoapBar-None-Toilet-410",
+     "pick_clean_then_place_in_recep-Lettuce-None-Fridge-19",
+     "pick_clean_then_place_in_recep-Plate-None-CounterTop-19",
+     "pick_clean_then_place_in_recep-ButterKnife-None-Drawer-2"
+    ],
+    "general_only_only_vs_full": [
+     "pick_clean_then_place_in_recep-SoapBar-None-Drawer-423"
+    ],
+    "full_only_vs_task_specific_only": [
+     "pick_clean_then_place_in_recep-Fork-None-Drawer-8"
+    ],
+    "task_specific_only_only_vs_full": [
+     "pick_clean_then_place_in_recep-Tomato-None-CounterTop-25",
+     "pick_clean_then_place_in_recep-Cloth-None-Drawer-423",
+     "pick_clean_then_place_in_recep-ButterKnife-None-CounterTop-8",
+     "pick_clean_then_place_in_recep-Lettuce-None-CounterTop-16"
+    ]
+   },
+   "stratum": "pick_clean_then_place_in_recep",
+   "multiplicity": {
+    "family_size": 12,
+    "full_vs_general_only": {
+     "bh": 0.041015625,
+     "bonferroni": 0.041015625
+    },
+    "full_vs_task_specific_only": {
+     "bh": 0.9,
+     "bonferroni": 1.0
+    }
+   }
+  },
+  {
+   "n": 24,
+   "cells": {
+    "none": {
+     "sr": 0.0,
+     "wins": 0
+    },
+    "general_only": {
+     "sr": 0.041666666666666664,
+     "wins": 1
+    },
+    "task_specific_only": {
+     "sr": 0.041666666666666664,
+     "wins": 1
+    },
+    "full": {
+     "sr": 0.08333333333333333,
+     "wins": 2
+    }
+   },
+   "effects": {
+    "G": 0.041666666666666664,
+    "TS": 0.041666666666666664,
+    "interaction": 0.0
+   },
+   "bootstrap": {
+    "G": {
+     "ci95": [
+      0.0,
+      0.10416666666666667
+     ],
+     "mean": 0.04155833333333333
+    },
+    "TS": {
+     "ci95": [
+      0.0,
+      0.10416666666666667
+     ],
+     "mean": 0.04155833333333333
+    },
+    "interaction": {
+     "ci95": [
+      -0.125,
+      0.125
+     ],
+     "mean": 0.001700000000000002
+    }
+   },
+   "pairwise": {
+    "full_vs_general_only": {
+     "delta": 0.041666666666666664,
+     "b": 1,
+     "c": 0,
+     "p": 1.0,
+     "ci_exact": [
+      -0.03958333333333333,
+      0.041666666666666664
+     ],
+     "ci_wald": [
+      -0.03828050918042581,
+      0.12161384251375915
+     ]
+    },
+    "full_vs_task_specific_only": {
+     "delta": 0.041666666666666664,
+     "b": 1,
+     "c": 0,
+     "p": 1.0,
+     "ci_exact": [
+      -0.03958333333333333,
+      0.041666666666666664
+     ],
+     "ci_wald": [
+      -0.03828050918042581,
+      0.12161384251375915
+     ]
+    },
+    "task_specific_only_vs_none": {
+     "delta": 0.041666666666666664,
+     "b": 1,
+     "c": 0,
+     "p": 1.0,
+     "ci_exact": [
+      -0.03958333333333333,
+      0.041666666666666664
+     ],
+     "ci_wald": [
+      -0.03828050918042581,
+      0.12161384251375915
+     ]
+    }
+   },
+   "cost": {
+    "none": {
+     "episodes": 24,
+     "prompt_tokens_mean": 72281.70833333333,
+     "prompt_tokens_per_step": 1445.6341666666667,
+     "prompt_tokens_mean_won": 0.0,
+     "response_tokens_mean": 1439.6666666666667,
+     "steps_mean": 50.0,
+     "won": 0
+    },
+    "general_only": {
+     "episodes": 24,
+     "prompt_tokens_mean": 94752.54166666667,
+     "prompt_tokens_per_step": 1931.4852777777778,
+     "prompt_tokens_mean_won": 5962.0,
+     "response_tokens_mean": 1416.5416666666667,
+     "steps_mean": 48.166666666666664,
+     "won": 1
+    },
+    "task_specific_only": {
+     "episodes": 24,
+     "prompt_tokens_mean": 97468.75,
+     "prompt_tokens_per_step": 1987.88375,
+     "prompt_tokens_mean_won": 8802.0,
+     "response_tokens_mean": 1462.7083333333333,
+     "steps_mean": 48.25,
+     "won": 1
+    },
+    "full": {
+     "episodes": 24,
+     "prompt_tokens_mean": 105330.5,
+     "prompt_tokens_per_step": 2195.523564814815,
+     "prompt_tokens_mean_won": 14222.0,
+     "response_tokens_mean": 1464.125,
+     "steps_mean": 46.708333333333336,
+     "won": 2
+    }
+   },
+   "discordant": {
+    "full_only_vs_general_only": [
+     "pick_two_obj_and_place-SprayBottle-None-Toilet-429"
+    ],
+    "general_only_only_vs_full": [],
+    "full_only_vs_task_specific_only": [
+     "pick_two_obj_and_place-SprayBottle-None-Toilet-429"
+    ],
+    "task_specific_only_only_vs_full": []
+   },
+   "stratum": "pick_two_obj_and_place",
+   "multiplicity": {
+    "family_size": 12,
+    "full_vs_general_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    },
+    "full_vs_task_specific_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    }
+   }
+  },
+  {
+   "n": 16,
+   "cells": {
+    "none": {
+     "sr": 0.0,
+     "wins": 0
+    },
+    "general_only": {
+     "sr": 0.0,
+     "wins": 0
+    },
+    "task_specific_only": {
+     "sr": 0.125,
+     "wins": 2
+    },
+    "full": {
+     "sr": 0.0,
+     "wins": 0
+    }
+   },
+   "effects": {
+    "G": -0.0625,
+    "TS": 0.0625,
+    "interaction": -0.125
+   },
+   "bootstrap": {
+    "G": {
+     "ci95": [
+      -0.15625,
+      0.0
+     ],
+     "mean": -0.06238125
+    },
+    "TS": {
+     "ci95": [
+      0.0,
+      0.15625
+     ],
+     "mean": 0.06238125
+    },
+    "interaction": {
+     "ci95": [
+      -0.3125,
+      0.0
+     ],
+     "mean": -0.1247625
+    }
+   },
+   "pairwise": {
+    "full_vs_general_only": {
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0,
+     "ci_exact": null,
+     "ci_wald": null
+    },
+    "full_vs_task_specific_only": {
+     "delta": -0.125,
+     "b": 0,
+     "c": 2,
+     "p": 0.5,
+     "ci_exact": [
+      -0.125,
+      0.08547152924789525
+     ],
+     "ci_wald": [
+      -0.2870522678027062,
+      0.03705226780270618
+     ]
+    },
+    "task_specific_only_vs_none": {
+     "delta": 0.125,
+     "b": 2,
+     "c": 0,
+     "p": 0.5,
+     "ci_exact": [
+      -0.08547152924789525,
+      0.125
+     ],
+     "ci_wald": [
+      -0.03705226780270618,
+      0.2870522678027062
+     ]
+    }
+   },
+   "cost": {
+    "none": {
+     "episodes": 16,
+     "prompt_tokens_mean": 84639.75,
+     "prompt_tokens_per_step": 1692.795,
+     "prompt_tokens_mean_won": 0.0,
+     "response_tokens_mean": 1378.4375,
+     "steps_mean": 50.0,
+     "won": 0
+    },
+    "general_only": {
+     "episodes": 16,
+     "prompt_tokens_mean": 109747.125,
+     "prompt_tokens_per_step": 2194.9425,
+     "prompt_tokens_mean_won": 0.0,
+     "response_tokens_mean": 1353.875,
+     "steps_mean": 50.0,
+     "won": 0
+    },
+    "task_specific_only": {
+     "episodes": 16,
+     "prompt_tokens_mean": 102683.4375,
+     "prompt_tokens_per_step": 2167.540563858696,
+     "prompt_tokens_mean_won": 29608.0,
+     "response_tokens_mean": 1310.0625,
+     "steps_mean": 46.1875,
+     "won": 2
+    },
+    "full": {
+     "episodes": 16,
+     "prompt_tokens_mean": 122012.875,
+     "prompt_tokens_per_step": 2440.2575,
+     "prompt_tokens_mean_won": 0.0,
+     "response_tokens_mean": 1366.6875,
+     "steps_mean": 50.0,
+     "won": 0
+    }
+   },
+   "discordant": {
+    "full_only_vs_general_only": [],
+    "general_only_only_vs_full": [],
+    "full_only_vs_task_specific_only": [],
+    "task_specific_only_only_vs_full": [
+     "pick_heat_then_place_in_recep-Tomato-None-Fridge-23",
+     "pick_heat_then_place_in_recep-Mug-None-Cabinet-26"
+    ]
+   },
+   "stratum": "pick_heat_then_place_in_recep",
+   "multiplicity": {
+    "family_size": 12,
+    "full_vs_general_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    },
+    "full_vs_task_specific_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    }
+   }
+  }
+ ],
+ "by_routed_group": [
+  {
+   "n": 7,
+   "cells": {
+    "none": {
+     "sr": 0.0,
+     "wins": 0
+    },
+    "general_only": {
+     "sr": 0.14285714285714285,
+     "wins": 1
+    },
+    "task_specific_only": {
+     "sr": 0.0,
+     "wins": 0
+    },
+    "full": {
+     "sr": 0.0,
+     "wins": 0
+    }
+   },
+   "effects": {
+    "G": 0.07142857142857142,
+    "TS": -0.07142857142857142,
+    "interaction": -0.14285714285714285
+   },
+   "bootstrap": {
+    "G": {
+     "ci95": [
+      0.0,
+      0.21428571428571427
+     ],
+     "mean": 0.06971428571428571
+    },
+    "TS": {
+     "ci95": [
+      -0.21428571428571427,
+      0.0
+     ],
+     "mean": -0.06971428571428571
+    },
+    "interaction": {
+     "ci95": [
+      -0.42857142857142855,
+      0.0
+     ],
+     "mean": -0.13942857142857143
+    }
+   },
+   "pairwise": {
+    "full_vs_general_only": {
+     "delta": -0.14285714285714285,
+     "b": 0,
+     "c": 1,
+     "p": 1.0,
+     "ci_exact": [
+      -0.14285714285714285,
+      0.1357142857142857
+     ],
+     "ci_wald": [
+      -0.4020867707934573,
+      0.11637248507917158
+     ]
+    },
+    "full_vs_task_specific_only": {
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0,
+     "ci_exact": null,
+     "ci_wald": null
+    },
+    "task_specific_only_vs_none": {
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0,
+     "ci_exact": null,
+     "ci_wald": null
+    }
+   },
+   "cost": {
+    "none": {
+     "episodes": 7,
+     "prompt_tokens_mean": 70086.57142857143,
+     "prompt_tokens_per_step": 1401.7314285714285,
+     "prompt_tokens_mean_won": 0.0,
+     "response_tokens_mean": 1468.7142857142858,
+     "steps_mean": 50.0,
+     "won": 0
+    },
+    "general_only": {
+     "episodes": 7,
+     "prompt_tokens_mean": 82003.57142857143,
+     "prompt_tokens_per_step": 1754.18,
+     "prompt_tokens_mean_won": 12612.0,
+     "response_tokens_mean": 1354.7142857142858,
+     "steps_mean": 44.57142857142857,
+     "won": 1
+    },
+    "task_specific_only": {
+     "episodes": 7,
+     "prompt_tokens_mean": 98302.0,
+     "prompt_tokens_per_step": 1966.0400000000002,
+     "prompt_tokens_mean_won": 0.0,
+     "response_tokens_mean": 1557.7142857142858,
+     "steps_mean": 50.0,
+     "won": 0
+    },
+    "full": {
+     "episodes": 7,
+     "prompt_tokens_mean": 107247.42857142857,
+     "prompt_tokens_per_step": 2144.9485714285715,
+     "prompt_tokens_mean_won": 0.0,
+     "response_tokens_mean": 1502.7142857142858,
+     "steps_mean": 50.0,
+     "won": 0
+    }
+   },
+   "discordant": {
+    "full_only_vs_general_only": [],
+    "general_only_only_vs_full": [
+     "look_at_obj_in_light-CD-None-DeskLamp-314"
+    ],
+    "full_only_vs_task_specific_only": [],
+    "task_specific_only_only_vs_full": []
+   },
+   "stratum": "loo",
+   "multiplicity": {
+    "family_size": 12,
+    "full_vs_general_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    },
+    "full_vs_task_specific_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    }
+   }
+  },
+  {
+   "n": 25,
+   "cells": {
+    "none": {
+     "sr": 0.08,
+     "wins": 2
+    },
+    "general_only": {
+     "sr": 0.04,
+     "wins": 1
+    },
+    "task_specific_only": {
+     "sr": 0.12,
+     "wins": 3
+    },
+    "full": {
+     "sr": 0.28,
+     "wins": 7
+    }
+   },
+   "effects": {
+    "G": 0.06000000000000001,
+    "TS": 0.14,
+    "interaction": 0.2
+   },
+   "bootstrap": {
+    "G": {
+     "ci95": [
+      -0.06,
+      0.2
+     ],
+     "mean": 0.060068
+    },
+    "TS": {
+     "ci95": [
+      0.03999999999999998,
+      0.26
+     ],
+     "mean": 0.14038
+    },
+    "interaction": {
+     "ci95": [
+      0.0,
+      0.4
+     ],
+     "mean": 0.200072
+    }
+   },
+   "pairwise": {
+    "full_vs_general_only": {
+     "delta": 0.24,
+     "b": 6,
+     "c": 0,
+     "p": 0.03125,
+     "ci_exact": [
+      0.019556099308847764,
+      0.24
+     ],
+     "ci_wald": [
+      0.07258341300814902,
+      0.40741658699185096
+     ]
+    },
+    "full_vs_task_specific_only": {
+     "delta": 0.16,
+     "b": 5,
+     "c": 1,
+     "p": 0.21875,
+     "ci_exact": [
+      -0.06779259791888392,
+      0.23797884263304506
+     ],
+     "ci_wald": [
+      -0.02150912263575075,
+      0.34150912263575073
+     ]
+    },
+    "task_specific_only_vs_none": {
+     "delta": 0.04,
+     "b": 2,
+     "c": 1,
+     "p": 1.0,
+     "ci_exact": [
+      -0.09736816222794094,
+      0.11798309792169297
+     ],
+     "ci_wald": [
+      -0.09488446018722838,
+      0.1748844601872284
+     ]
+    }
+   },
+   "cost": {
+    "none": {
+     "episodes": 25,
+     "prompt_tokens_mean": 81089.52,
+     "prompt_tokens_per_step": 1669.3953777777779,
+     "prompt_tokens_mean_won": 31008.0,
+     "response_tokens_mean": 1333.08,
+     "steps_mean": 47.92,
+     "won": 2
+    },
+    "general_only": {
+     "episodes": 25,
+     "prompt_tokens_mean": 107815.88,
+     "prompt_tokens_per_step": 2200.972,
+     "prompt_tokens_mean_won": 21707.0,
+     "response_tokens_mean": 1372.48,
+     "steps_mean": 48.56,
+     "won": 1
+    },
+    "task_specific_only": {
+     "episodes": 25,
+     "prompt_tokens_mean": 101055.52,
+     "prompt_tokens_per_step": 2126.5240863266813,
+     "prompt_tokens_mean_won": 39367.0,
+     "response_tokens_mean": 1334.88,
+     "steps_mean": 46.56,
+     "won": 3
+    },
+    "full": {
+     "episodes": 25,
+     "prompt_tokens_mean": 99819.44,
+     "prompt_tokens_per_step": 2274.953902331002,
+     "prompt_tokens_mean_won": 43671.142857142855,
+     "response_tokens_mean": 1191.52,
+     "steps_mean": 42.16,
+     "won": 7
+    }
+   },
+   "discordant": {
+    "full_only_vs_general_only": [
+     "pick_cool_then_place_in_recep-Bowl-None-Cabinet-20",
+     "pick_cool_then_place_in_recep-Tomato-None-CounterTop-12",
+     "pick_cool_then_place_in_recep-Tomato-None-Microwave-18",
+     "pick_cool_then_place_in_recep-Cup-None-SideTable-21",
+     "pick_cool_then_place_in_recep-Lettuce-None-CounterTop-1",
+     "pick_cool_then_place_in_recep-Apple-None-GarbageCan-2"
+    ],
+    "general_only_only_vs_full": [],
+    "full_only_vs_task_specific_only": [
+     "pick_cool_then_place_in_recep-Plate-None-CounterTop-1",
+     "pick_cool_then_place_in_recep-Bowl-None-Cabinet-20",
+     "pick_cool_then_place_in_recep-Tomato-None-Microwave-18",
+     "pick_cool_then_place_in_recep-Cup-None-SideTable-21",
+     "pick_cool_then_place_in_recep-Apple-None-GarbageCan-2"
+    ],
+    "task_specific_only_only_vs_full": [
+     "pick_cool_then_place_in_recep-Plate-None-Cabinet-27"
+    ]
+   },
+   "stratum": "coo",
+   "multiplicity": {
+    "family_size": 12,
+    "full_vs_general_only": {
+     "bh": 0.1875,
+     "bonferroni": 0.375
+    },
+    "full_vs_task_specific_only": {
+     "bh": 0.875,
+     "bonferroni": 1.0
+    }
+   }
+  },
+  {
+   "n": 61,
+   "cells": {
+    "none": {
+     "sr": 0.2459016393442623,
+     "wins": 15
+    },
+    "general_only": {
+     "sr": 0.32786885245901637,
+     "wins": 20
+    },
+    "task_specific_only": {
+     "sr": 0.2786885245901639,
+     "wins": 17
+    },
+    "full": {
+     "sr": 0.3114754098360656,
+     "wins": 19
+    }
+   },
+   "effects": {
+    "G": 0.05737704918032788,
+    "TS": 0.008196721311475419,
+    "interaction": -0.0491803278688524
+   },
+   "bootstrap": {
+    "G": {
+     "ci95": [
+      0.008196721311475391,
+      0.11475409836065575
+     ],
+     "mean": 0.05771475409836065
+    },
+    "TS": {
+     "ci95": [
+      -0.04098360655737704,
+      0.05737704918032788
+     ],
+     "mean": 0.008370491803278687
+    },
+    "interaction": {
+     "ci95": [
+      -0.14754098360655737,
+      0.04918032786885246
+     ],
+     "mean": -0.04919344262295082
+    }
+   },
+   "pairwise": {
+    "full_vs_general_only": {
+     "delta": -0.01639344262295082,
+     "b": 2,
+     "c": 3,
+     "p": 1.0,
+     "ci_exact": [
+      -0.07332049991371854,
+      0.0579290492402175
+     ],
+     "ci_wald": [
+      -0.08812299334560911,
+      0.05533610809970746
+     ]
+    },
+    "full_vs_task_specific_only": {
+     "delta": 0.03278688524590164,
+     "b": 3,
+     "c": 1,
+     "p": 0.625,
+     "ci_exact": [
+      -0.04011535086121398,
+      0.06474629990692331
+     ],
+     "ci_wald": [
+      -0.030946493063194157,
+      0.09652026355499743
+     ]
+    },
+    "task_specific_only_vs_none": {
+     "delta": 0.03278688524590164,
+     "b": 3,
+     "c": 1,
+     "p": 0.625,
+     "ci_exact": [
+      -0.04011535086121398,
+      0.06474629990692331
+     ],
+     "ci_wald": [
+      -0.030946493063194157,
+      0.09652026355499743
+     ]
+    }
+   },
+   "cost": {
+    "none": {
+     "episodes": 61,
+     "prompt_tokens_mean": 56735.75409836065,
+     "prompt_tokens_per_step": 1262.0772937809004,
+     "prompt_tokens_mean_won": 3858.4666666666667,
+     "response_tokens_mean": 1147.672131147541,
+     "steps_mean": 39.295081967213115,
+     "won": 15
+    },
+    "general_only": {
+     "episodes": 61,
+     "prompt_tokens_mean": 71440.81967213115,
+     "prompt_tokens_per_step": 1701.1756647234154,
+     "prompt_tokens_mean_won": 14774.35,
+     "response_tokens_mean": 1085.4918032786886,
+     "steps_mean": 37.09836065573771,
+     "won": 20
+    },
+    "task_specific_only": {
+     "episodes": 61,
+     "prompt_tokens_mean": 76004.0655737705,
+     "prompt_tokens_per_step": 1771.5218542664445,
+     "prompt_tokens_mean_won": 10181.411764705883,
+     "response_tokens_mean": 1172.0655737704917,
+     "steps_mean": 38.34426229508197,
+     "won": 17
+    },
+    "full": {
+     "episodes": 61,
+     "prompt_tokens_mean": 81382.7868852459,
+     "prompt_tokens_per_step": 1960.6325377651779,
+     "prompt_tokens_mean_won": 10626.631578947368,
+     "response_tokens_mean": 1139.8196721311476,
+     "steps_mean": 36.91803278688525,
+     "won": 19
+    }
+   },
+   "discordant": {
+    "full_only_vs_general_only": [
+     "pick_two_obj_and_place-SprayBottle-None-Toilet-429",
+     "pick_and_place_simple-Mug-None-Dresser-311"
+    ],
+    "general_only_only_vs_full": [
+     "pick_and_place_simple-Pencil-None-Dresser-330",
+     "pick_and_place_simple-SoapBar-None-Cart-401",
+     "pick_and_place_simple-CreditCard-None-Drawer-227"
+    ],
+    "full_only_vs_task_specific_only": [
+     "pick_two_obj_and_place-SprayBottle-None-Toilet-429",
+     "pick_and_place_simple-RemoteControl-None-Sofa-207",
+     "pick_and_place_simple-Candle-None-Toilet-429"
+    ],
+    "task_specific_only_only_vs_full": [
+     "pick_and_place_simple-Pencil-None-Desk-310"
+    ]
+   },
+   "stratum": "pic",
+   "multiplicity": {
+    "family_size": 12,
+    "full_vs_general_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    },
+    "full_vs_task_specific_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    }
+   }
+  },
+  {
+   "n": 27,
+   "cells": {
+    "none": {
+     "sr": 0.07407407407407407,
+     "wins": 2
+    },
+    "general_only": {
+     "sr": 0.037037037037037035,
+     "wins": 1
+    },
+    "task_specific_only": {
+     "sr": 0.5555555555555556,
+     "wins": 15
+    },
+    "full": {
+     "sr": 0.4444444444444444,
+     "wins": 12
+    }
+   },
+   "effects": {
+    "G": -0.0740740740740741,
+    "TS": 0.4444444444444444,
+    "interaction": -0.07407407407407413
+   },
+   "bootstrap": {
+    "G": {
+     "ci95": [
+      -0.18518518518518517,
+      0.018518518518518517
+     ],
+     "mean": -0.07424444444444445
+    },
+    "TS": {
+     "ci95": [
+      0.2777777777777778,
+      0.6111111111111112
+     ],
+     "mean": 0.44607407407407407
+    },
+    "interaction": {
+     "ci95": [
+      -0.2592592592592593,
+      0.11111111111111116
+     ],
+     "mean": -0.07657777777777779
+    }
+   },
+   "pairwise": {
+    "full_vs_general_only": {
+     "delta": 0.4074074074074074,
+     "b": 12,
+     "c": 1,
+     "p": 0.00341796875,
+     "ci_exact": [
+      0.1345283956679698,
+      0.47960791329885133
+     ],
+     "ci_wald": [
+      0.19553502838135925,
+      0.6192797864334555
+     ]
+    },
+    "full_vs_task_specific_only": {
+     "delta": -0.1111111111111111,
+     "b": 1,
+     "c": 4,
+     "p": 0.375,
+     "ci_exact": [
+      -0.1833145320816785,
+      0.08015479115484796
+     ],
+     "ci_wald": [
+      -0.2679290341836964,
+      0.045706811961474164
+     ]
+    },
+    "task_specific_only_vs_none": {
+     "delta": 0.48148148148148145,
+     "b": 13,
+     "c": 0,
+     "p": 0.000244140625,
+     "ci_exact": [
+      0.24357894118473167,
+      0.48148148148148145
+     ],
+     "ci_wald": [
+      0.29300979396482363,
+      0.6699531689981393
+     ]
+    }
+   },
+   "cost": {
+    "none": {
+     "episodes": 27,
+     "prompt_tokens_mean": 79760.66666666667,
+     "prompt_tokens_per_step": 1644.7332659932658,
+     "prompt_tokens_mean_won": 8979.5,
+     "response_tokens_mean": 1368.2222222222222,
+     "steps_mean": 47.074074074074076,
+     "won": 2
+    },
+    "general_only": {
+     "episodes": 27,
+     "prompt_tokens_mean": 108062.29629629629,
+     "prompt_tokens_per_step": 2183.537175925926,
+     "prompt_tokens_mean_won": 53499.0,
+     "response_tokens_mean": 1476.2592592592594,
+     "steps_mean": 49.333333333333336,
+     "won": 1
+    },
+    "task_specific_only": {
+     "episodes": 27,
+     "prompt_tokens_mean": 63559.37037037037,
+     "prompt_tokens_per_step": 1931.4690890590891,
+     "prompt_tokens_mean_won": 22417.466666666667,
+     "response_tokens_mean": 1036.3703703703704,
+     "steps_mean": 29.48148148148148,
+     "won": 15
+    },
+    "full": {
+     "episodes": 27,
+     "prompt_tokens_mean": 80068.44444444444,
+     "prompt_tokens_per_step": 2201.199816623706,
+     "prompt_tokens_mean_won": 21130.333333333332,
+     "response_tokens_mean": 1179.2592592592594,
+     "steps_mean": 32.851851851851855,
+     "won": 12
+    }
+   },
+   "discordant": {
+    "full_only_vs_general_only": [
+     "pick_clean_then_place_in_recep-Ladle-None-CounterTop-14",
+     "pick_clean_then_place_in_recep-ButterKnife-None-Drawer-30",
+     "pick_clean_then_place_in_recep-Fork-None-Drawer-8",
+     "pick_clean_then_place_in_recep-Ladle-None-DiningTable-4",
+     "pick_clean_then_place_in_recep-Mug-None-CoffeeMachine-26",
+     "pick_clean_then_place_in_recep-Fork-None-CounterTop-23",
+     "pick_clean_then_place_in_recep-ButterKnife-None-DiningTable-16",
+     "pick_clean_then_place_in_recep-SoapBar-None-Toilet-428",
+     "pick_clean_then_place_in_recep-SoapBar-None-Toilet-410",
+     "pick_clean_then_place_in_recep-Lettuce-None-Fridge-19",
+     "pick_clean_then_place_in_recep-Plate-None-CounterTop-19",
+     "pick_clean_then_place_in_recep-ButterKnife-None-Drawer-2"
+    ],
+    "general_only_only_vs_full": [
+     "pick_clean_then_place_in_recep-SoapBar-None-Drawer-423"
+    ],
+    "full_only_vs_task_specific_only": [
+     "pick_clean_then_place_in_recep-Fork-None-Drawer-8"
+    ],
+    "task_specific_only_only_vs_full": [
+     "pick_clean_then_place_in_recep-Tomato-None-CounterTop-25",
+     "pick_clean_then_place_in_recep-Cloth-None-Drawer-423",
+     "pick_clean_then_place_in_recep-ButterKnife-None-CounterTop-8",
+     "pick_clean_then_place_in_recep-Lettuce-None-CounterTop-16"
+    ]
+   },
+   "stratum": "cle",
+   "multiplicity": {
+    "family_size": 12,
+    "full_vs_general_only": {
+     "bh": 0.041015625,
+     "bonferroni": 0.041015625
+    },
+    "full_vs_task_specific_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    }
+   }
+  },
+  {
+   "n": 6,
+   "cells": {
+    "none": {
+     "sr": 0.0,
+     "wins": 0
+    },
+    "general_only": {
+     "sr": 0.0,
+     "wins": 0
+    },
+    "task_specific_only": {
+     "sr": 0.3333333333333333,
+     "wins": 2
+    },
+    "full": {
+     "sr": 0.0,
+     "wins": 0
+    }
+   },
+   "effects": {
+    "G": -0.16666666666666666,
+    "TS": 0.16666666666666666,
+    "interaction": -0.3333333333333333
+   },
+   "bootstrap": {
+    "G": {
+     "ci95": [
+      -0.3333333333333333,
+      0.0
+     ],
+     "mean": -0.16738333333333333
+    },
+    "TS": {
+     "ci95": [
+      0.0,
+      0.3333333333333333
+     ],
+     "mean": 0.16738333333333333
+    },
+    "interaction": {
+     "ci95": [
+      -0.6666666666666666,
+      0.0
+     ],
+     "mean": -0.33476666666666666
+    }
+   },
+   "pairwise": {
+    "full_vs_general_only": {
+     "delta": 0.0,
+     "b": 0,
+     "c": 0,
+     "p": 1.0,
+     "ci_exact": null,
+     "ci_wald": null
+    },
+    "full_vs_task_specific_only": {
+     "delta": -0.3333333333333333,
+     "b": 0,
+     "c": 2,
+     "p": 0.5,
+     "ci_exact": [
+      -0.3333333333333333,
+      0.22792407799438733
+     ],
+     "ci_wald": [
+      -0.7105355092038889,
+      0.04386884253722223
+     ]
+    },
+    "task_specific_only_vs_none": {
+     "delta": 0.3333333333333333,
+     "b": 2,
+     "c": 0,
+     "p": 0.5,
+     "ci_exact": [
+      -0.22792407799438733,
+      0.3333333333333333
+     ],
+     "ci_wald": [
+      -0.04386884253722223,
+      0.7105355092038889
+     ]
+    }
+   },
+   "cost": {
+    "none": {
+     "episodes": 6,
+     "prompt_tokens_mean": 86182.16666666667,
+     "prompt_tokens_per_step": 1723.6433333333334,
+     "prompt_tokens_mean_won": 0.0,
+     "response_tokens_mean": 1384.8333333333333,
+     "steps_mean": 50.0,
+     "won": 0
+    },
+    "general_only": {
+     "episodes": 6,
+     "prompt_tokens_mean": 112231.5,
+     "prompt_tokens_per_step": 2244.63,
+     "prompt_tokens_mean_won": 0.0,
+     "response_tokens_mean": 1354.0,
+     "steps_mean": 50.0,
+     "won": 0
+    },
+    "task_specific_only": {
+     "episodes": 6,
+     "prompt_tokens_mean": 87211.5,
+     "prompt_tokens_per_step": 2047.888170289855,
+     "prompt_tokens_mean_won": 29608.0,
+     "response_tokens_mean": 1128.8333333333333,
+     "steps_mean": 39.833333333333336,
+     "won": 2
+    },
+    "full": {
+     "episodes": 6,
+     "prompt_tokens_mean": 121744.5,
+     "prompt_tokens_per_step": 2434.89,
+     "prompt_tokens_mean_won": 0.0,
+     "response_tokens_mean": 1318.8333333333333,
+     "steps_mean": 50.0,
+     "won": 0
+    }
+   },
+   "discordant": {
+    "full_only_vs_general_only": [],
+    "general_only_only_vs_full": [],
+    "full_only_vs_task_specific_only": [],
+    "task_specific_only_only_vs_full": [
+     "pick_heat_then_place_in_recep-Tomato-None-Fridge-23",
+     "pick_heat_then_place_in_recep-Mug-None-Cabinet-26"
+    ]
+   },
+   "stratum": "hea",
+   "multiplicity": {
+    "family_size": 12,
+    "full_vs_general_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    },
+    "full_vs_task_specific_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    }
+   }
+  },
+  {
+   "n": 14,
+   "cells": {
+    "none": {
+     "sr": 0.0,
+     "wins": 0
+    },
+    "general_only": {
+     "sr": 0.14285714285714285,
+     "wins": 2
+    },
+    "task_specific_only": {
+     "sr": 0.07142857142857142,
+     "wins": 1
+    },
+    "full": {
+     "sr": 0.0,
+     "wins": 0
+    }
+   },
+   "effects": {
+    "G": 0.03571428571428571,
+    "TS": -0.03571428571428571,
+    "interaction": -0.21428571428571427
+   },
+   "bootstrap": {
+    "G": {
+     "ci95": [
+      -0.07142857142857142,
+      0.17857142857142855
+     ],
+     "mean": 0.037092857142857136
+    },
+    "TS": {
+     "ci95": [
+      -0.17857142857142855,
+      0.07142857142857142
+     ],
+     "mean": -0.037092857142857136
+    },
+    "interaction": {
+     "ci95": [
+      -0.4285714285714286,
+      0.0
+     ],
+     "mean": -0.2122142857142857
+    }
+   },
+   "pairwise": {
+    "full_vs_general_only": {
+     "delta": -0.14285714285714285,
+     "b": 0,
+     "c": 2,
+     "p": 0.5,
+     "ci_exact": [
+      -0.14285714285714285,
+      0.09768174771188029
+     ],
+     "ci_wald": [
+      -0.3261601706553765,
+      0.040445884941090776
+     ]
+    },
+    "full_vs_task_specific_only": {
+     "delta": -0.07142857142857142,
+     "b": 0,
+     "c": 1,
+     "p": 1.0,
+     "ci_exact": [
+      -0.07142857142857142,
+      0.06785714285714285
+     ],
+     "ci_wald": [
+      -0.20633594706089184,
+      0.06347880420374899
+     ]
+    },
+    "task_specific_only_vs_none": {
+     "delta": 0.07142857142857142,
+     "b": 1,
+     "c": 0,
+     "p": 1.0,
+     "ci_exact": [
+      -0.06785714285714285,
+      0.07142857142857142
+     ],
+     "ci_wald": [
+      -0.06347880420374899,
+      0.20633594706089184
+     ]
+    }
+   },
+   "cost": {
+    "none": {
+     "episodes": 14,
+     "prompt_tokens_mean": 72661.71428571429,
+     "prompt_tokens_per_step": 1453.2342857142855,
+     "prompt_tokens_mean_won": 0.0,
+     "response_tokens_mean": 1478.7857142857142,
+     "steps_mean": 50.0,
+     "won": 0
+    },
+    "general_only": {
+     "episodes": 14,
+     "prompt_tokens_mean": 87570.28571428571,
+     "prompt_tokens_per_step": 1881.112932330827,
+     "prompt_tokens_mean_won": 19080.5,
+     "response_tokens_mean": 1351.9285714285713,
+     "steps_mean": 44.92857142857143,
+     "won": 2
+    },
+    "task_specific_only": {
+     "episodes": 14,
+     "prompt_tokens_mean": 103849.07142857143,
+     "prompt_tokens_per_step": 2085.161762917933,
+     "prompt_tokens_mean_won": 89711.0,
+     "response_tokens_mean": 1590.357142857143,
+     "steps_mean": 49.785714285714285,
+     "won": 1
+    },
+    "full": {
+     "episodes": 14,
+     "prompt_tokens_mean": 116005.07142857143,
+     "prompt_tokens_per_step": 2320.1014285714286,
+     "prompt_tokens_mean_won": 0.0,
+     "response_tokens_mean": 1634.0714285714287,
+     "steps_mean": 50.0,
+     "won": 0
+    }
+   },
+   "discordant": {
+    "full_only_vs_general_only": [],
+    "general_only_only_vs_full": [
+     "look_at_obj_in_light-Pillow-None-DeskLamp-323",
+     "look_at_obj_in_light-Bowl-None-DeskLamp-316"
+    ],
+    "full_only_vs_task_specific_only": [],
+    "task_specific_only_only_vs_full": [
+     "look_at_obj_in_light-KeyChain-None-DeskLamp-327"
+    ]
+   },
+   "stratum": "exa",
+   "multiplicity": {
+    "family_size": 12,
+    "full_vs_general_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    },
+    "full_vs_task_specific_only": {
+     "bh": 1.0,
+     "bonferroni": 1.0
+    }
+   }
+  }
+ ]
+}
